@@ -10,8 +10,9 @@ def multiple_letter_count(phrase):
     frequency_obj = {}
 
     for letter in phrase:
-        count = 0 if (letter not in frequency_obj) else frequency_obj[letter]
-        frequency_obj[letter] = count + 1
+        frequency_obj[letter] = frequency_obj.get(letter, 0) + 1
+
+    #     count = 0 if (letter not in frequency_obj) else frequency_obj[letter]
+    #     frequency_obj[letter] = count + 1
+
     return frequency_obj
-
-

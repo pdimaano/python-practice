@@ -22,5 +22,5 @@ def is_palindrome(phrase):
         True
     """
     updated_phrase = phrase.lower().replace(" ", "")
-    reverse_phrase = phrase[::-1].lower().replace(" ", "")
+    reverse_phrase = updated_phrase[::-1]
     return reverse_phrase == updated_phrase
